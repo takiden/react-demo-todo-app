@@ -1,0 +1,12 @@
+.header{
+    widows: 100%;
+    margin:10px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

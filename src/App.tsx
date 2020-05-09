@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { MouseEventHandler } from 'react';
 import './App.css';
+import HeaderBar from './components/header-bar/header-bar';
+import AddButton from './UI/add-button/add-button';
+import MainContainer from './components/main-container/main-container';
 
 function App() {
+
+  const addNewContainer:MouseEventHandler =(event) => { 
+    console.log(`add new container`);
+   }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <HeaderBar></HeaderBar>      
+    <MainContainer></MainContainer>
+    <AddButton additionalClasses="main__addButton"  width={36} height={36} clickHandler={addNewContainer}/>
     </div>
   );
 }

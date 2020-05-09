@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-flow: column;
+    min-width: 200px;
+    min-height: 300px;
+    background-color: gainsboro;
+
+}
+.container__header{
+    outline: none;
+    padding: 5px;
+    font-size: 2rem;
+    background-color: transparent;
+}
+.container__header:focus{
+    outline: none;
+}
+.container__body{
+    min-height: 50px;
+    background-color: wheat;
+}
+.container__footer{
+    height: 40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 3px 7px;
+}
+.addButton__background{
+    background-color: yellowgreen;
+    
+}
