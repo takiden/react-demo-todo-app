@@ -3,7 +3,7 @@ import './add-button.css';
 
 const AddButton:React.FC<{clickHandler:MouseEventHandler, width?:number, height?:number, additionalClasses?:string}> = (props) => {
     
-    let classes = "addButton" + " " + props.additionalClasses;
+    let classes = "addButton " + props.additionalClasses;
     
     return(
 

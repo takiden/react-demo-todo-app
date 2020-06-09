@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
 }
 
 .main__addButton{
@@ -12,5 +16,5 @@
   color: lightcoral;
   font-size: 2rem;
   box-shadow: 2px 2px lightgray;
-  background-color: lightseagreen;
+  background-color: rgba(108, 201, 108, 0.747);
 }
